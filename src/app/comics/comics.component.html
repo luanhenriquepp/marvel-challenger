@@ -1,0 +1,20 @@
+<ul class="cards">
+  <ng-container *ngFor="let comic of data">
+    <li *ngIf="!comic.thumbnail.path.includes('image_not_available')">
+      <a class="card">
+        <img src="{{comic.thumbnail.path}}/portrait_uncanny.jpg" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <img class="card__thumb" src="{{comic.thumbnail.path}}.jpg" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">{{comic.title}}</h3>
+              <span class="card__status">${{comic.prices[0]?.price || 0}}</span>
+            </div>
+          </div>
+          <p translate="yes" class="card__description">{{comic.description  || '' }}</p>
+        </div>
+      </a>
+    </li>
+  </ng-container>
+</ul>
+
