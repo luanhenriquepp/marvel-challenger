@@ -1,6 +1,6 @@
 <div class="topnav" id="myTopnav">
-  <a (click)="navigateTo('/characters')">Personagens</a>
-  <a (click)="navigateTo('/comics')">História em Quadrinhos</a>
-  <a href="#events">Eventos</a>
+  <a routerLink="/characters" routerLinkActive="active">Personagens</a>
+  <a routerLink="/comics" routerLinkActive="active">História em Quadrinhos</a>
+  <a routerLink="/events" routerLinkActive="active">Eventos</a>
   <a class="icon" (click)="handleMobileVision()">&#9776;</a>
 </div>
