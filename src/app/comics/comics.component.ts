@@ -9,12 +9,14 @@ import {ComicsService} from "./service/comics.service";
 export class ComicsComponent implements OnInit {
 
   data: any;
+  loading: boolean = false;
   constructor(protected service: ComicsService) { }
 
   ngOnInit(): void {
+    this.loading = true;
     this.service.getComics().subscribe((resp: any) => {
-      console.log(resp.data.results)
       this.data = resp.data.results;
+      this.loading = false;
     })
   }
 
