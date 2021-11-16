@@ -8,13 +8,17 @@ import { FooterComponent } from './footer/footer.component';
 import { ComicsComponent } from './comics/comics.component';
 import {HttpClientModule} from "@angular/common/http";
 import {RouterModule} from "@angular/router";
+import { LoadingComponent } from './loading/loading.component';
+import {CharactersComponent} from "./characters/characters.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ComicsComponent
+    ComicsComponent,
+    CharactersComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

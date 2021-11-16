@@ -1,3 +1,5 @@
+<app-loading [isShow]="loading"></app-loading>
+
 <ul class="cards">
   <ng-container *ngFor="let comic of data">
     <li *ngIf="!comic.thumbnail.path.includes('image_not_available')">
