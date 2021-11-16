@@ -1,0 +1,21 @@
+<app-loading [isShow]="loading"></app-loading>
+
+<ul class="cards">
+  <ng-container *ngFor="let character of data">
+    <li *ngIf="!character.thumbnail.path.includes('image_not_available')">
+      <a class="card">
+        <img src="{{character.thumbnail.path +'.'+character.thumbnail.extension}}" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <img class="card__thumb" src="{{character.thumbnail.path +'.'+character.thumbnail.extension}}" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">{{character.title}}</h3>
+            </div>
+          </div>
+          <p translate="yes" class="card__description">{{character.description  || '' }}</p>
+        </div>
+      </a>
+    </li>
+  </ng-container>
+</ul>
+

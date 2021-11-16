@@ -10,6 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {RouterModule} from "@angular/router";
 import { LoadingComponent } from './loading/loading.component';
 import {CharactersComponent} from "./characters/characters.component";
+import {EventsComponent} from "./events/events.component";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {CharactersComponent} from "./characters/characters.component";
     FooterComponent,
     ComicsComponent,
     CharactersComponent,
+    EventsComponent,
     LoadingComponent
   ],
   imports: [
