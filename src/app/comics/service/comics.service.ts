@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
-import { environment } from "../../../environments/environment";
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {environment} from "../../../environments/environment";
 import {GenerateApiKey} from "../../util/hash-api-key";
 
 @Injectable({
@@ -13,10 +13,7 @@ export class ComicsService {
   }
 
   getComics() {
-    return this.http.get(`
-      ${environment.MARVEL_API}v1/public/comics?ts=1&apikey=
-      ${environment.PUBLIC_KEY}&hash=
-      ${GenerateApiKey.apiKey()}`
+    return this.http.get(`${environment.MARVEL_API}v1/public/comics?ts=1&apikey=${environment.PUBLIC_KEY}&hash=${GenerateApiKey.apiKey()}`
     );
   }
 }
