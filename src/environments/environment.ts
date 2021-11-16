@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  PUBLIC_KEY: '',
-  PRIVATE_KEY: '',
+  PUBLIC_KEY: 'ed56c2b9071e9a69d973aa9bd96d26d1',
+  PRIVATE_KEY: '8f75e7e71187710fa22ef6e42fa16b062d50b2bb',
   MARVEL_API: 'https://gateway.marvel.com:443/'
 };
 
