@@ -19,7 +19,4 @@ export class HeaderComponent implements OnInit {
     element?.className === "topnav" ? element.className += " responsive" : element.className = "topnav";
   }
 
-  navigateTo(url: string) {
-    return this.router.navigate([url]);
-  }
 }
