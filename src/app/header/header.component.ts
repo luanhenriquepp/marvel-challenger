@@ -12,4 +12,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleMobileVision() {
+    let element = document.getElementById("myTopnav");
+    // @ts-ignore
+    element?.className === "topnav" ? element.className += " responsive" : element.className = "topnav";
+  }
 }
