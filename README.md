@@ -1,6 +1,6 @@
 # Importante
 
-Para executar o projeto é necessário você colocar a sua chave pública e privada no arquivo de enviroment
+Para executar o projeto é necessário você colocar a sua chave pública e privada no arquivo de environment
 
 # MarvelChallenger
 
